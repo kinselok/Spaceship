@@ -37,6 +37,6 @@ public class Player : MonoBehaviour, IHitAsteroid
     {
         if (Input.touchCount == 1 && Input.GetTouch(0).phase == TouchPhase.Began) Fire();
         float x = Input.acceleration.x;
-        gameObject.GetComponent<Rigidbody>().velocity = new Vector3(x * 20, 0, 0);
+        gameObject.GetComponent<Rigidbody>().velocity = new Vector3(x * 40, 0, 0);
     }
 }
